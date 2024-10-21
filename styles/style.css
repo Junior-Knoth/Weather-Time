@@ -21,6 +21,7 @@ body {
   width: clamp(100px, 25%, 500px);
   text-align: center;
   margin: 0 37.5%;
+  pointer-events: none;
 }
 
 #weather-div {
@@ -43,6 +44,9 @@ body {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
+#weather-div form input::-moz-placeholder {
+  color: rgba(21, 40, 58, 0.5254901961);
+}
 #weather-div form input::placeholder {
   color: rgba(21, 40, 58, 0.5254901961);
 }
@@ -60,6 +64,7 @@ body {
 }
 #weather-div form button:hover {
   opacity: 70%;
+  cursor: pointer;
 }
 #weather-div h1 {
   margin: 12px 0;
@@ -70,13 +75,11 @@ body {
   margin: 5px 0;
 }
 
-#timer {
+#timer-div {
   position: absolute;
   top: 15px;
   right: 15px;
 }
-#timer p {
+#timer-div p {
   font-size: 26px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
