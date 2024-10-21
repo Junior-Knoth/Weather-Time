@@ -1,0 +1,43 @@
+#weather-div
+    width: clamp(10px, 350px, 400px)
+    text-align: center
+    margin: 0 auto
+    // background-color: #3d90c7
+    // border: 2px solid #2e658a
+    // padding: 30px
+    border-radius: $b-radius
+    position: relative
+
+    form
+        text-align: left
+        %bg-config
+            background-color: #aad8f3
+            border: none
+        input
+            width: 85%
+            padding: 5px
+            border-top-left-radius: $b-radius
+            border-bottom-left-radius: $b-radius
+            @extend %bg-config
+            &::placeholder
+                color: $placeholder-color
+            &:focus
+                border: none
+        
+        button
+            position: absolute
+            top: 0px
+            right: 0px
+            width: 15%
+            padding: 5px
+            border-top-right-radius: $b-radius
+            border-bottom-right-radius: $b-radius
+            @extend %bg-config
+            &:hover
+                opacity: 70%
+    h1
+        margin: 12px 0
+        font-size: $fs-title
+    p
+        font-size: $fs-text
+        margin: 5px 0
