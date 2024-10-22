@@ -35,7 +35,7 @@ forms:addEventListener("submit",async (e)=>{
 
         city_p.textContent = `${data.name} - ${data.sys.country}`
         temp.textContent = `Temperatura: ${data.main.temp}ºC`
-        humidity.textContent = `Humidade: ${data.main.humidity}%`
+        humidity.textContent = `Umidade: ${data.main.humidity}%`
 
 
     } catch (e) {
